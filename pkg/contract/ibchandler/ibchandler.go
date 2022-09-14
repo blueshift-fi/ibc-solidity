@@ -647,9 +647,9 @@ func (_Ibchandler *IbchandlerTransactorSession) CreateClient(msg_ IBCMsgsMsgCrea
 	return _Ibchandler.Contract.CreateClient(&_Ibchandler.TransactOpts, msg_)
 }
 
-func (_Ibchandler *IbchandlerCaller) CreateClientWithClientId(opts *bind.CallOpts) (string, error) {
+func (_Ibchandler *IbchandlerCaller) CreateClientWithClientId(opts *bind.CallOpts, msg_ IBCMsgsMsgCreateClient) (string, error) {
 	var out []interface{}
-	err := _Ibchandler.contract.Call(opts, &out, "createClient")
+	err := _Ibchandler.contract.Call(opts, &out, "createClient", msg_)
 
 	if err != nil {
 		return *new(string), err
