@@ -35,7 +35,7 @@ contract IBCHandler {
 
     /// Handler interface implementations ///
 
-    function createClient(IBCMsgs.MsgCreateClient calldata msg_) external {
+    function createClient(IBCMsgs.MsgCreateClient calldata msg_) external returns(string memory) {
         return IBCClient.createClient(host, msg_);
     }
 

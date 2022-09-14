@@ -10,7 +10,7 @@ library IBCClient {
     /**
      * @dev createClient creates a new client state and populates it with a given consensus state
      */
-    function createClient(IBCHost host, IBCMsgs.MsgCreateClient calldata msg_) external {
+    function createClient(IBCHost host, IBCMsgs.MsgCreateClient calldata msg_) external returns(string memory) {
         host.onlyIBCModule();
         (, bool found) = getClientByType(host, msg_.clientType);
         require(found, "unregistered client type");
@@ -21,6 +21,7 @@ library IBCClient {
         host.setConsensusState(clientId, msg_.height, msg_.consensusStateBytes);
         host.setProcessedTime(clientId, msg_.height, block.timestamp);
         host.setProcessedHeight(clientId, msg_.height, block.number);
+        return clientId;
     }
 
     /**
