@@ -647,6 +647,19 @@ func (_Ibchandler *IbchandlerTransactorSession) CreateClient(msg_ IBCMsgsMsgCrea
 	return _Ibchandler.Contract.CreateClient(&_Ibchandler.TransactOpts, msg_)
 }
 
+func (_Ibchandler *IbchandlerCaller) CreateClientWithClientId(opts *bind.CallOpts) (string, error) {
+	var out []interface{}
+	err := _Ibchandler.contract.Call(opts, &out, "createClient")
+
+	if err != nil {
+		return *new(string), err
+	}
+
+	out0 := *abi.ConvertType(out[0], new(string)).(*string)
+
+	return out0, err
+}
+
 // RecvPacket is a paid mutator transaction binding the contract method 0x236ebd70.
 //
 // Solidity: function recvPacket(((uint64,string,string,string,string,bytes,(uint64,uint64),uint64),bytes,(uint64,uint64)) msg_) returns(bytes acknowledgement)
