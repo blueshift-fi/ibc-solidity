@@ -12,8 +12,8 @@ import (
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/hyperledger-labs/yui-ibc-solidity/pkg/contract/ibchandler"
-	"github.com/hyperledger-labs/yui-ibc-solidity/pkg/contract/ibchost"
+	"github.com/blueshift-fi/ibc-solidity/pkg/contract/ibchandler"
+	"github.com/blueshift-fi/ibc-solidity/pkg/contract/ibchost"
 )
 
 var (

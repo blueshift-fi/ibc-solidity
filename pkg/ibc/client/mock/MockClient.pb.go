@@ -5,9 +5,9 @@ package mock
 
 import (
 	fmt "fmt"
+	client "github.com/blueshift-fi/ibc-solidity/pkg/ibc/client"
 	_ "github.com/datachainlab/solidity-protobuf/protobuf-solidity/src/protoc/go"
 	proto "github.com/gogo/protobuf/proto"
-	client "github.com/hyperledger-labs/yui-ibc-solidity/pkg/ibc/client"
 	io "io"
 	math "math"
 	math_bits "math/bits"

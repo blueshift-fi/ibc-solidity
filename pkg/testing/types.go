@@ -5,11 +5,11 @@ import (
 	"encoding/binary"
 	"fmt"
 
+	"github.com/blueshift-fi/ibc-solidity/pkg/contract/ibchost"
+	channeltypes "github.com/blueshift-fi/ibc-solidity/pkg/ibc/channel"
+	connectiontypes "github.com/blueshift-fi/ibc-solidity/pkg/ibc/connection"
 	"github.com/gogo/protobuf/proto"
 	"github.com/gogo/protobuf/types"
-	"github.com/hyperledger-labs/yui-ibc-solidity/pkg/contract/ibchost"
-	channeltypes "github.com/hyperledger-labs/yui-ibc-solidity/pkg/ibc/channel"
-	connectiontypes "github.com/hyperledger-labs/yui-ibc-solidity/pkg/ibc/connection"
 )
 
 // TestConnection is a testing helper struct to keep track of the connectionID, source clientID,

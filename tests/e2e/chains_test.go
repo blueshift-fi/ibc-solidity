@@ -9,13 +9,13 @@ import (
 	"time"
 
 	"github.com/avast/retry-go"
-	"github.com/hyperledger-labs/yui-ibc-solidity/pkg/client"
-	"github.com/hyperledger-labs/yui-ibc-solidity/pkg/contract/ibchost"
-	channeltypes "github.com/hyperledger-labs/yui-ibc-solidity/pkg/ibc/channel"
-	clienttypes "github.com/hyperledger-labs/yui-ibc-solidity/pkg/ibc/client"
-	ibctesting "github.com/hyperledger-labs/yui-ibc-solidity/pkg/testing"
-	testchain0 "github.com/hyperledger-labs/yui-ibc-solidity/tests/e2e/config/chain0"
-	testchain1 "github.com/hyperledger-labs/yui-ibc-solidity/tests/e2e/config/chain1"
+	"github.com/blueshift-fi/ibc-solidity/pkg/client"
+	"github.com/blueshift-fi/ibc-solidity/pkg/contract/ibchost"
+	channeltypes "github.com/blueshift-fi/ibc-solidity/pkg/ibc/channel"
+	clienttypes "github.com/blueshift-fi/ibc-solidity/pkg/ibc/client"
+	ibctesting "github.com/blueshift-fi/ibc-solidity/pkg/testing"
+	testchain0 "github.com/blueshift-fi/ibc-solidity/tests/e2e/config/chain0"
+	testchain1 "github.com/blueshift-fi/ibc-solidity/tests/e2e/config/chain1"
 	"github.com/stretchr/testify/suite"
 )
 

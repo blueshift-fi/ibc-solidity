@@ -1,8 +1,8 @@
 package module
 
 import (
+	"github.com/blueshift-fi/ibc-solidity/pkg/relay"
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/hyperledger-labs/yui-ibc-solidity/pkg/relay"
 	"github.com/hyperledger-labs/yui-relayer/config"
 	"github.com/spf13/cobra"
 )
