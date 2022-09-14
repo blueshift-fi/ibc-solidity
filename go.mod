@@ -1,4 +1,4 @@
-module github.com/hyperledger-labs/yui-ibc-solidity
+module github.com/blueshift-fi/ibc-solidity
 
 go 1.18
 
